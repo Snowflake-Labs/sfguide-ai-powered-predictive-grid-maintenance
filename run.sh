@@ -254,8 +254,8 @@ generate_data() {
     echo ""
     
     echo -e "${YELLOW}Running data generators...${NC}"
-    python3 python/data_generators/generate_asset_data.py
-    python3 python/data_generators/generate_sensor_data.py
+    python3 data_generators/generate_asset_data.py
+    python3 data_generators/generate_sensor_data.py
     
     echo -e "${GREEN}✓ Data generation complete${NC}"
 }
