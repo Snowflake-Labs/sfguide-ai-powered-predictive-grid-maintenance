@@ -26,6 +26,14 @@
  ******************************************************************************/
 
 -- =============================================================================
+-- SECTION 0: ACCOUNT SETTINGS FOR CORTEX
+-- =============================================================================
+
+-- Enable cross-region Cortex inference for regions without local Cortex availability
+-- Required for Cortex Search, Cortex Analyst, and Snowflake Intelligence features
+ALTER ACCOUNT SET CORTEX_ENABLED_CROSS_REGION = 'ANY_REGION';
+
+-- =============================================================================
 -- SECTION 1: DATABASE AND WAREHOUSE
 -- =============================================================================
 
