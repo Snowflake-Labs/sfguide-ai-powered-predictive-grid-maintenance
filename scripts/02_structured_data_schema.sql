@@ -540,6 +540,14 @@ GRANT USAGE ON WAREHOUSE GRID_RELIABILITY_WH TO ROLE GRID_ML_ENGINEER;
 GRANT USAGE ON WAREHOUSE GRID_RELIABILITY_WH TO ROLE GRID_ANALYST;
 GRANT USAGE ON WAREHOUSE GRID_RELIABILITY_WH TO ROLE GRID_OPERATOR;
 
+-- Grant all roles to the user executing this deployment (so they appear in UI)
+SET deploying_user = CURRENT_USER();
+GRANT ROLE GRID_ADMIN TO USER IDENTIFIER($deploying_user);
+GRANT ROLE GRID_DATA_ENGINEER TO USER IDENTIFIER($deploying_user);
+GRANT ROLE GRID_ML_ENGINEER TO USER IDENTIFIER($deploying_user);
+GRANT ROLE GRID_ANALYST TO USER IDENTIFIER($deploying_user);
+GRANT ROLE GRID_OPERATOR TO USER IDENTIFIER($deploying_user);
+
 -- =============================================================================
 -- SCRIPT COMPLETE
 -- =============================================================================
