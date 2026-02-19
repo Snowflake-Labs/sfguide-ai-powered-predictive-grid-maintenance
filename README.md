@@ -15,9 +15,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-# AI-Powered Predictive Grid Maintenance
+# AI-Powered Energy Utilities Predictive Grid Maintenance
 
 A complete predictive maintenance solution for power grid transformers built on Snowflake's AI Data Cloud.
+
+**Built By:** Sri Subramanian, Senior Solution Engineer  
+[GitHub](https://github.com/sfc-gh-srsubramanian) | [LinkedIn](https://www.linkedin.com/in/sri-subramanian-a6376137)
 
 ---
 
